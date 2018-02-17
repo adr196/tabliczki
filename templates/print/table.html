@@ -1,0 +1,51 @@
+{% extends 'print/base.html' %}
+{% block content %}
+    <style>
+    h2{
+        font-weight: normal;
+    }
+    </style>
+    <div>
+        <div>
+            <table style="padding-top: 80px; border: dotted 1px #898989">
+                <tr>
+                    <td style="width: 10%;"></td>
+                    <td style="width: 80%; background-color: #fbcb27"></td>
+                    <td style="width: 10%"></td>
+                </tr>
+            </table>
+            <table style="padding-top: 30px">
+                <tr style="text-align: center">
+                    <td style="background-color: #fbcb27; font-size: 40pt; color: white;">{{ table.title|upper }}</td>
+                </tr>
+            </table>
+            <table style="line-height: 0">
+                <tr style="text-align: center">
+                    <td style="background-color: #fbcb27; display: block; font-size: 80pt; color: white; font-weight: bold;">{{ table.number }}</td>
+                </tr>
+            </table>
+            <table style="padding: 30px">
+                <tr style="">
+                    <td style="width: 10%; border-right: dotted 2px #898989;"></td>
+                    <td style="width: 5%"></td>
+                    <td style="width: 60%; text-align: left; font-size: 25pt">{{ table.description|safe }}</td>
+                    <td style="width: 15%"></td>
+                    <td style="width: 10%; border-left: dotted 2px #898989;"></td>
+                </tr>
+            </table>
+            <table style="padding-top: 10px">
+                <tr style="height: 1pt; text-align: center; color: white">
+                    <td style="background-color: #898989; font-size: 10pt">{{ table.faculty_description|safe }}</td>
+                </tr>
+            </table>
+            <table style="padding-top: 73px; border: dotted 1px #898989">
+                <tr>
+                    <td style="width: 10%"></td>
+                    <td style="width: 80%; background-color: #898989"></td>
+                    <td style="width: 10%"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+@page {
+    size: A4 portrait;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    margin-right: 0cm;
+    margin-left: 0cm;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/static/pdf/fonts/OpenSans-Light.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/static/pdf/fonts/OpenSans-Semibold.ttf);
+    font-weight: bold;
+}
+
+/*@font-face {*/
+    /*font-family: 'Open Sans';*/
+    /*src: url(/static/pdf/fonts/OpenSans-Bold.ttf);*/
+    /*font-weight: 800;*/
+/*}*/
+
+body {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    /*font-size: 10pt;*/
+}

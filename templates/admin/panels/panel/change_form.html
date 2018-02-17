@@ -1,0 +1,15 @@
+{% extends "admin/change_form.html" %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    {% if object_id %}
+        <div class="submit-row clearfix krd-buttons">
+            <a href="{% url 'print_table' object_id %}"
+               target="_blank"
+               class="btn btn-primary btn-block"
+               type="button">
+                Generuj PDF
+            </a>
+        </div>
+    {% endif %}
+{% endblock %}
